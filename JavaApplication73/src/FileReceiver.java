@@ -22,7 +22,7 @@ public class FileReceiver extends Thread {
     public static void main(String[] args) {
         System.out.println("Файловый приемник запущен...");
         new FileReceiver().run();
-        System.out.println("Файловый приемник закрыт...");  
+        System.out.println("Файловый приемник закрыт!");  
     }
     
     @Override
@@ -43,7 +43,7 @@ public class FileReceiver extends Thread {
                     fos.write(buff, 0, ns);
                 }
             }
-            outs.write("Передача файла завершена...".getBytes());
+            outs.write("Передача файла завершена!".getBytes());
         } catch (IOException ex) {
             System.err.println("Error#1: " + ex.getMessage());
         }
