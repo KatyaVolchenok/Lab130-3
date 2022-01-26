@@ -43,7 +43,7 @@ public class FileReceiver extends Thread {
                     fos.write(buff, 0, ns);
                 }
             }
-            outs.write("Передача файла завершена!".getBytes());
+            outs.write("Передача файла завершена...".getBytes());
         } catch (IOException ex) {
             System.err.println("Error#1: " + ex.getMessage());
         }
